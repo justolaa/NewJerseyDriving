@@ -7,9 +7,10 @@ const Program = () => {
     <Wrapper>
         <div className="container">
       <h1>New Jersey's Program</h1>
+      <div className="underline"></div>
            <div className="program"> 
                        {program.map((programs)=>{
-                            const {id, src, url, content } = programs;
+                            const {id, src, content } = programs;
                             return(
                                 <div className="our-program" key={id}>
                                     <h4>{content}</h4>  
@@ -28,6 +29,11 @@ const Wrapper = styled.div`
 .container{
     text-align: center;
     margin-top: 150px;
+}
+.underline{
+    position: relative;
+    bottom: 0;
+    left:47%;
 }
 h1{
     color: black;

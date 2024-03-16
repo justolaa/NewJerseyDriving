@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faPhone,faLocationDot} from '@fortawesome/free-solid-svg-icons'
 
 const Footer = () => {
   return (
@@ -11,7 +13,7 @@ const Footer = () => {
                    <p>Welcome to New Jersey Driving School, where we empower individuals of all ages to become safe and responsible drivers.
 
 We offer a diverse range of programs designed to meet your unique needs and goals, whether you're a nervous 16-year-old, a returning adult driver, or a seasoned driver seeking to refine your skills.</p>
-                    
+                
                     <h2>Middlesex</h2>
                     <p>Liscence Number: 2222</p>
                     <h2>Woodbridge</h2>
@@ -37,10 +39,10 @@ We offer a diverse range of programs designed to meet your unique needs and goal
             <div className="grid-item">
                 <h1>EDISON DRIVING SCHOOL</h1>
                   <p>Edison Location</p>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, exercitationem!</p>
-
+                 <p> <FontAwesomeIcon icon={faLocationDot} /> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, exercitationem!</p>
+                  <br />
                     
-                    <a href="tel:">Telephone:(732)-423-3893</a>
+                   <FontAwesomeIcon icon={faPhone} /> <a href="tel:">Telephone:(732)-423-3893</a>
                     
                     <p>License Number: 22222</p>
                     <br />
@@ -55,17 +57,18 @@ We offer a diverse range of programs designed to meet your unique needs and goal
                     adipisicing elit. Nam animi unde assumenda, exercitationem 
                     doloribus praesentium et beatae amet similique sed!</p>
                     <br />
-                    <a href="tel:">Telephone:(732)-423-3893</a>
+                   <FontAwesomeIcon icon={faPhone} /><a href="tel:">  Telephone:(732)-423-3893</a>
                     
                     <h2>OFFICE HOURS</h2>
                     <p>Monday-Friday: 10:00AM-5:00PM</p>
                     <p>Saturday: Please Call For Hours</p>
                     <p>Sunday: CLOSED</p>
             </div>
-    
+         
       </div>
+
+
       </div>
-      
     </Wrapper>
   )
 }
@@ -79,7 +82,7 @@ const Wrapper = styled.div`
     gap: 2px;
     padding: 60px;
     background: #000000;
-    color: white;
+    color: #F6FBF4;
   }
 
   .grid-item{
@@ -97,5 +100,6 @@ const Wrapper = styled.div`
 h1{
   color: white;
 }
+
 `
 export default Footer

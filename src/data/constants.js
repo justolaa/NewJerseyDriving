@@ -125,7 +125,7 @@ export const program = [
 export const courses = [
   {
     id: 1,
-    src: require('../Assets/driving-school.png'),
+    src: require('../Assets/car (1).png'),
     content: 'DDC-6, 2 POINT REDUCTION CLASS ',
     width: '150px',
     height: '150px'
@@ -133,7 +133,7 @@ export const courses = [
 
     {
     id: 2,
-    src: require('../Assets/driving-test.png'),
+    src: require('../Assets/driving-license.png'),
     content: 'ADVANCED ROAD TRAINING',
     width: '150px',
     height: '150px'
