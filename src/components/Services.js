@@ -62,13 +62,14 @@ h2{
 .services{
         display: grid;
         grid-template-rows: repeat(2,auto) ;
-        grid-template-columns: repeat(3,auto);
+        grid-template-columns: repeat(4,auto);
         gap: 30px;
-        justify-content: center;
+        justify-content: space-evenly;
+        padding: 20px;
     }
 
 .our-services{
-    width: 400px;
+    width: auto;
     height: auto;
     margin-top: 15px;  
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);

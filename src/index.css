@@ -3,6 +3,7 @@ body {
  font-family: 'Cormorant Garamond', 'Proza Libre','Arvo';;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 a{

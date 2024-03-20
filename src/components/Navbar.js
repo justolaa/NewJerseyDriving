@@ -50,7 +50,7 @@ const Wrapper = styled.div`
 }
 
 .Links > div{
-    margin-left: 70px;
+    margin-left: 63px;
     font-size: 17px;
     color: white;
     text-transform: uppercase;

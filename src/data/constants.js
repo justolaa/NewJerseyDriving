@@ -8,7 +8,7 @@ export const links = [
     {
     id: 2,
     title: 'Services',
-    url: '/about'
+    url: '/services'
   },
 
     {
@@ -95,6 +95,11 @@ export const service = [
      id: 3,
     name: '17 Year Old and Adult Programs:',
     service: 'Ready to hit the road, whether you are 17 or beyond? New Jersey Driving Schools 17 Year Old & Adult Programs provide comprehensive instruction tailored to your unique needs and experience level.Gain the skills and confidence needed to transition from learners permit to full drivers license. Choose from various packages offering the required 6 hours of in-car instruction and additional lessons for personalized growth.',
+  },
+   {
+     id: 4,
+    name: 'Road Test and Brush-up Service:',
+    service: 'Whenever you are ready to take your NJ Road Test, we will be there all the way to provide you with the skills necessary for the road test and provide a brush-up review lesson to ensure you have the skills necessary to pass your test on the first try. Our instructor will go over step by step the techniques and maneuvers for the road test, with emphasis on Three Point Turn or K turn and parallel parking. Please contact our office four weeks in advance prior to your test date, we will try our best to help.',
   },
   
 ]

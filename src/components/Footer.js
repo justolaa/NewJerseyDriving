@@ -38,18 +38,15 @@ We offer a diverse range of programs designed to meet your unique needs and goal
 
             <div className="grid-item">
                 <h1>EDISON DRIVING SCHOOL</h1>
-                  <p>Edison Location</p>
                  <p> <FontAwesomeIcon icon={faLocationDot} /> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, exercitationem!</p>
                   <br />
                     
                    <FontAwesomeIcon icon={faPhone} /> <a href="tel:">Telephone:(732)-423-3893</a>
                     
-                    <p>License Number: 22222</p>
+                    <p>Liscense Number: 22222</p>
                     <br />
                     <h2>OFFICE HOURS</h2>
-                    <p>Monday-Friday: 10:00AM-5:00PM</p>
-                    <p>Saturday: Please Call For Hours</p>
-                    <p>Sunday: CLOSED</p>
+                    <p>Open 7 Days A Week</p>
             </div>
     <div className="grid-item">
         <h1>ACCURATE DRIVING SCHOOL</h1>
@@ -60,9 +57,7 @@ We offer a diverse range of programs designed to meet your unique needs and goal
                    <FontAwesomeIcon icon={faPhone} /><a href="tel:">  Telephone:(732)-423-3893</a>
                     
                     <h2>OFFICE HOURS</h2>
-                    <p>Monday-Friday: 10:00AM-5:00PM</p>
-                    <p>Saturday: Please Call For Hours</p>
-                    <p>Sunday: CLOSED</p>
+                    <p>Open 7 Days A Week</p>
             </div>
          
       </div>

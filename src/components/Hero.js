@@ -1,14 +1,34 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import styled from 'styled-components'
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+gsap.registerPlugin(ScrollTrigger);
 const Hero = () => {
+      const ref = useRef(null);
+
+  React.useEffect(() => {
+    const element = ref.current;
+
+    gsap.fromTo(
+      element.querySelector('.text'),
+      { opacity: 0, y: 90, x:-90 },
+      { opacity: 1, y: 0, x:0, scrollTrigger: { trigger: element, start: 'top 80%' } }
+    );
+
+    gsap.fromTo(
+      element.querySelector('.image'),
+      { opacity: 0, y: 90 },
+      { opacity: 1, y: 0, scrollTrigger: { trigger: element, start: 'top 80%' } }
+    );
+  }, []);
   return (
     <Wrapper>
-        <div className="container">
+        <div ref={ref} className="container">
             <div className="image">
                  <img src={require('../Assets/road-track-6874080_1920.jpg')} width='100%' height='430px' alt="Track" />
                 <div className="text">
-                    <h1> Serving All Of MIDDLESEX, SOMMERSET <br /> AND  UNION COUNTRIES DRIVING! </h1>
+                    <h1>We Cover ESSEX, UNION, MIDDLESEX <br /> AND SOMMERSET County Areas.</h1>
                     <div className="tagline">
                            <h2>OUR INSTRUCTORS ARE ALL STATE CERTIFIED AND PUT THROUGH RIGOROUS TRAINING 
                     </h2>
