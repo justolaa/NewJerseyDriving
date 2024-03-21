@@ -2,9 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 import { links } from '../data/constants';
 import { NavLink } from 'react-router-dom';
+import Logo from './Logo';
 const Navbar = () => {
   return (
     <Wrapper>
+      <Logo/>
      <div className="nav-container">
         <div className="nav-header">
             <div className="Links">
@@ -30,10 +32,9 @@ const Wrapper = styled.div`
      width: 100vw;
      max-width: var(--max-width);   
      background: black; 
-     text-align: center;
-    
-      
+     text-align: center; 
 }
+
  .nav-header {
     display: flex;
     align-items: center;
@@ -63,6 +64,11 @@ p1{
    font-style: italic;
    letter-spacing: 1.3px;
 }
+@media (max-width: 992px) {
+    .nav-container {
+      display: none;
+    }
+  }
 
 `
 export default Navbar

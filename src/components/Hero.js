@@ -110,6 +110,29 @@ const Wrapper = styled.div`
         letter-spacing: 3px;
         line-height: 39px;
     }
-   }`
+    }
+        @media (max-width: 992px) {
+          .text{
+            width:90%;
+                h1{
+                font-size: 15px;
+                line-height: 27px;
+              }
+
+              h2{
+                font-size: 1rem;
+                line-height: 27px;
+              }
+          }
+             
+           .tagline{
+            width:100%;
+            margin-top: 30px;
+           }   
+           .btn{
+    position: absolute;
+    right:-50px;
+    bottom:50px;
+        }`
 
 export default Hero

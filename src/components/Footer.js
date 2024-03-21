@@ -96,5 +96,15 @@ h1{
   color: white;
 }
 
+@media (max-width: 992px) {
+ .grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2px;
+    padding: 60px;
+    background: #000000;
+    color: #F6FBF4;
+  }
+
 `
 export default Footer

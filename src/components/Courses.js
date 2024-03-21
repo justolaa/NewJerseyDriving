@@ -80,6 +80,25 @@ h2{
     letter-spacing: 2px;
 }
 
+ @media (max-width: 992px) {
+    .container{
+        width:80vw;
+        height:auto;
+        margin:auto;
+        margin-top: 150px;
+       
+    }
+            .icons{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+        }
+        .font-awesome{
+          display: none;
+}
+    }
+
 .font-awesome{
     transform: translateY(-100px);
 }
@@ -106,5 +125,6 @@ h2{
      40%, 100%{
         transform: rotateZ(0);
     }
+
 `
 export default Courses

@@ -61,5 +61,20 @@ h1{
     img{
       margin-top: 25px;
     }
+
+    @media (max-width: 992px) {
+      .program{
+        display: grid;
+        grid-template-rows: repeat(3,auto) ;
+        grid-template-columns: repeat(1,auto);
+        gap: 30px;
+        justify-content: center;
+         margin-top: 15px;   
+    }
+    .our-program{
+    width: auto;
+  }
+   
+    }
 `
 export default Program

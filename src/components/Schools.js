@@ -122,6 +122,14 @@ h1{
       font-style: italic;
         font-size: 1.28rem;
     }
-
+@media (max-width: 992px) {
+   .grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2px;
+    margin: 40px 0px 0px 0px;
+    padding: 0px;
+  }
+}
 `
 export default Schools

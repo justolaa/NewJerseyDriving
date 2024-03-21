@@ -83,6 +83,14 @@ h2{
         text-transform: uppercase;
         font: bold;
     }
-}`
+}
+@media (max-width: 992px) {
+    .services{
+        display: grid;
+        grid-template-rows: repeat(4,auto) ;
+        grid-template-columns: repeat(1,auto);
+        gap: 30px;
+}
+`
 
 export default Services

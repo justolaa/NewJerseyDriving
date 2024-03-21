@@ -1,13 +1,22 @@
 import React from 'react'
+import {NavLink } from 'react-router-dom'
+import { links } from '../data/constants'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faBars } from '@fortawesome/free-solid-svg-icons'
 import styled from 'styled-components'
-
+import { useProductsContext } from '../context/Context';
 
 const Logo = () => {
+   const {openSidebar, userRole} = useProductsContext();
   return (
     <Wrapper>
+
      <div className="Logo">
       <img src={require('../Assets/Logo.jpg')} width='150px' height='150px' alt="Logo" />
-      <div className='Logo-name'>NewJersey<span>Driving</span> </div>
+      <div className='Logo-name'>NewJersey<span>Driving</span></div>
+         <button type='button' className="nav-toggle" onClick={openSidebar}>
+                <FontAwesomeIcon icon={faBars} style={{color: "#FFD43B",}} />
+            </button>
      </div>
     </Wrapper>
   )
@@ -37,5 +46,30 @@ const Wrapper = styled.div`
     }
   
 }
+
+ .nav-toggle {
+    background: transparent;
+    border: transparent;
+    color: #5FD068;
+    cursor: pointer;
+    margin-bottom: 7rem;
+    position: absolute;
+    right:0;
+    svg {
+      font-size: 2rem;
+    }
+  }
+  
+@media (max-width: 992px) {
+      display: flex;
+      margin-left: 0;
+      margin-bottom: 30px;
+      justify-content: center;
+  }
+
+  @media (min-width: 992px){
+    .nav-toggle {
+      display: none;
+    }
 `
 export default Logo

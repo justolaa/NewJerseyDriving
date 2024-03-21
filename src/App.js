@@ -6,12 +6,13 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home'
 import Footer from './components/Footer';
 import Services from './pages/Services'
+import Sidebar from './components/Sidebar';
 function App() {
   return (
 
     <Router>
-         <Logo/>
         <Navbar/>
+        <Sidebar/>
         <Routes>
         <Route path='/' element={<Home/> }></Route>
         <Route path='/services' element={<Services/> }></Route>
