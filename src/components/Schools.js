@@ -50,7 +50,7 @@ const Schools = () => {
             
 
             <div className="grid-item">
-                <div>SOMERSET COUNTY</div>
+                <div className='first'>SOMERSET COUNTY</div>
                    <ul>
                     <li>Franklin High School</li>
                     <li>Immaculata</li>
@@ -60,7 +60,7 @@ const Schools = () => {
                 </ul>
             </div>
     <div className="grid-item">
-        <div>UNION COUNTY</div>
+        <div className='first'>UNION COUNTY</div>
                    <ul>
                     <li>Arthur L.Johnson</li>
                     <li>Govenor Livingston</li>
@@ -130,6 +130,7 @@ h1{
     margin: 40px 0px 0px 0px;
     padding: 0px;
   }
+
 }
 `
 export default Schools

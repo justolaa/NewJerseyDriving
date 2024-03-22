@@ -113,6 +113,7 @@ const Wrapper = styled.div`
     }
         @media (max-width: 992px) {
           .text{
+            margin-left:15px;
             width:90%;
                 h1{
                 font-size: 15px;
@@ -120,8 +121,8 @@ const Wrapper = styled.div`
               }
 
               h2{
-                font-size: 1rem;
-                line-height: 27px;
+                font-size: 0.8rem;
+                line-height: 25px;
               }
           }
              

@@ -62,9 +62,18 @@ const Wrapper = styled.div`
   
 @media (max-width: 992px) {
       display: flex;
-      margin-left: 0;
       margin-bottom: 30px;
-      justify-content: center;
+      margin-left:10px;
+      justify-content: flex-start;
+      gap:9px;
+
+      img{
+        width:130px;
+        height:140px;
+      }
+      .Logo-name{
+        font-size:1.3rem;
+      }
   }
 
   @media (min-width: 992px){
