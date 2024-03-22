@@ -137,7 +137,11 @@ const Wrapper = styled.div`
 h1{
   color: white;
 }
-
+@media (min-width: 1024px) {
+ .grid-container2{
+  display:none;
+ }
+}
 @media (max-width: 992px) {
 .grid-container{
     display: none;
