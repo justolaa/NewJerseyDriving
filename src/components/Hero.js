@@ -2,6 +2,8 @@ import React, {useRef} from 'react'
 import styled from 'styled-components'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faCarSide} from '@fortawesome/free-solid-svg-icons'
 
 gsap.registerPlugin(ScrollTrigger);
 const Hero = () => {
@@ -32,7 +34,7 @@ const Hero = () => {
                     <div className="tagline">
                            <h2>OUR INSTRUCTORS ARE ALL STATE CERTIFIED AND PUT THROUGH RIGOROUS TRAINING 
                     </h2>
-                    <div className="btn">Get Started</div>
+                    <div className="btn">Get Started <span><FontAwesomeIcon icon={faCarSide} bounce size='xl'  /></span></div> 
                     </div>
 
                 </div>
