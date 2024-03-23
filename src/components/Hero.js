@@ -134,7 +134,7 @@ const Wrapper = styled.div`
            }   
            .btn{
     position: absolute;
-    right:-50px;
+    right:-85px;
     bottom:50px;
         }`
 
