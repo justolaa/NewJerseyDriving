@@ -1,16 +1,16 @@
 import './App.css';
-import Logo from './components/Logo'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Contact from './components/Contact'
 import Navbar from './components/Navbar';
 import Home from './pages/Home'
 import Footer from './components/Footer';
 import Services from './pages/Services'
 import Sidebar from './components/Sidebar';
+import { ScrollToTop } from './context/Context'
 function App() {
   return (
 
     <Router>
+      <ScrollToTop/>
         <Navbar/>
         <Sidebar/>
         <Routes>

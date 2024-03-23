@@ -1,18 +1,17 @@
 import React from 'react'
-import {NavLink } from 'react-router-dom'
-import { links } from '../data/constants'
+import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faBars } from '@fortawesome/free-solid-svg-icons'
 import styled from 'styled-components'
 import { useProductsContext } from '../context/Context';
 
 const Logo = () => {
-   const {openSidebar, userRole} = useProductsContext();
+   const {openSidebar} = useProductsContext();
   return (
     <Wrapper>
 
      <div className="Logo">
-      <img src={require('../Assets/Logo.jpg')} width='150px' height='150px' alt="Logo" />
+     <Link to='/'> <img src={require('../Assets/Logoo.jpg')} width='150px' height='150px' alt="Logo" /></Link>
       <div className='Logo-name'>NewJersey<span>Driving</span></div>
          <button type='button' className="nav-toggle" onClick={openSidebar}>
                 <FontAwesomeIcon icon={faBars} style={{color: "#FFD43B",}} />
@@ -30,11 +29,16 @@ const Wrapper = styled.div`
   gap:15px;
   margin: 35px 0px 0px 90px;
   img{
-    border-radius:100%;
+    border-radius:50%;
+    background-position: center;
+    object-fit: contain;
   }
 
 .Logo-name{
     transform:translateY(60px);
+    position: absolute;
+    left: 230px;
+
     font-size: 1.5rem;
     color: black;
   font-family: "Lato", sans-serif;
@@ -73,6 +77,8 @@ const Wrapper = styled.div`
       }
       .Logo-name{
         font-size:1.3rem;
+        position: absolute;
+        left: 145px;
       }
   }
 

@@ -13,11 +13,12 @@ const Footer = () => {
                    <p>Welcome to New Jersey Driving School, where we empower individuals of all ages to become safe and responsible drivers.
 
 We offer a diverse range of programs designed to meet your unique needs and goals, whether you're a nervous 16-year-old, a returning adult driver, or a seasoned driver seeking to refine your skills.</p>
-                
+                 <h2>OFFICE HOURS</h2>
+                    <p>Open 7 Days A Week</p>
                     <h2>Middlesex</h2>
-                    <p>Liscence Number: 2222</p>
+                    <p>License Number: 2222</p>
                     <h2>Woodbridge</h2>
-                    <p>Liscence Number: 2222</p>
+                    <p>License Number: 2222</p>
                 
             </div>
             <div className="grid-item">
@@ -37,27 +38,23 @@ We offer a diverse range of programs designed to meet your unique needs and goal
             
 
             <div className="grid-item">
-                <h1>EDISON DRIVING SCHOOL</h1>
+                <h1>NEW JERSEY DRIVING SCHOOL</h1>
                  <p> <FontAwesomeIcon icon={faLocationDot} /> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, exercitationem!</p>
                   <br />
                     
                    <FontAwesomeIcon icon={faPhone} /> <a href="tel:">Telephone:(732)-423-3893</a>
                     
-                    <p>Liscense Number: 22222</p>
-                    <br />
-                    <h2>OFFICE HOURS</h2>
-                    <p>Open 7 Days A Week</p>
+                    <p>License Number: 22222</p>
+                   
             </div>
     <div className="grid-item">
         <h1>ACCURATE DRIVING SCHOOL</h1>
-                 <p>Lorem ipsum dolor sit amet consectetur 
+                 <p><FontAwesomeIcon icon={faLocationDot}/> Lorem ipsum dolor sit amet consectetur 
                     adipisicing elit. Nam animi unde assumenda, exercitationem 
                     doloribus praesentium et beatae amet similique sed!</p>
                     <br />
                    <FontAwesomeIcon icon={faPhone} /><a href="tel:">  Telephone:(732)-423-3893</a>
-                    
-                    <h2>OFFICE HOURS</h2>
-                    <p>Open 7 Days A Week</p>
+                  
             </div>
          
       </div>
@@ -69,11 +66,12 @@ We offer a diverse range of programs designed to meet your unique needs and goal
                    <p>Welcome to New Jersey Driving School, where we empower individuals of all ages to become safe and responsible drivers.
 
 We offer a diverse range of programs designed to meet your unique needs and goals, whether you're a nervous 16-year-old, a returning adult driver, or a seasoned driver seeking to refine your skills.</p>
-                
+                <h2>OFFICE HOURS</h2>
+                    <p>Open 7 Days A Week</p>
                     <h2>Middlesex</h2>
-                    <p>Liscence Number: 2222</p>
+                    <p>License Number: 2222</p>
                     <h2>Woodbridge</h2>
-                    <p>Liscence Number: 2222</p>
+                    <p>License Number: 2222</p>
                 
             </div>
             <div className="grid-item2">
@@ -93,15 +91,13 @@ We offer a diverse range of programs designed to meet your unique needs and goal
             
 
             <div className="grid-item2">
-                <h1>EDISON DRIVING SCHOOL</h1>
+                <h1>NEW JERSEY DRIVING SCHOOL</h1>
                  <p> <FontAwesomeIcon icon={faLocationDot} /> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, exercitationem!</p>
                   <br />
                     
                    <FontAwesomeIcon icon={faPhone} /> <a href="tel:">Telephone:(732)-423-3893</a>
-                    
                     <br />
-                    <h2>OFFICE HOURS</h2>
-                    <p>Open 7 Days A Week</p>
+                    
             </div>
          
       </div>

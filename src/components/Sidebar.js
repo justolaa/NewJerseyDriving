@@ -2,19 +2,19 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useProductsContext } from '../context/Context'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faBars } from '@fortawesome/free-solid-svg-icons'
+import {faXmark } from '@fortawesome/free-solid-svg-icons'
 import { links } from '../data/constants'
 import styled from 'styled-components'
 
 
 const Sidebar = () => {
-  const {isSidebarOpen, closeSidebar, userRole} = useProductsContext()
+  const {isSidebarOpen, closeSidebar} = useProductsContext()
   return <SidebarContainer>
     <aside className={`${isSidebarOpen? 'sidebar show-sidebar' : "sidebar"}`}>
       <div className="sidebar-header">
-        <Link onClick={closeSidebar} to='/' className='Logo'>  <img src={require('../Assets/Logo.jpg')} width='130px' height='130px' alt="Logo" /><div className="text">NewJersey<span>Driving</span></div> </Link>
+        <Link onClick={closeSidebar} to='/' className='Logo'>  <img src={require('../Assets/Logoo.jpg')} width='130px' height='130px' alt="Logo" /><div className="text">NewJersey<span>Driving</span></div> </Link>
         <button onClick={closeSidebar} type='button' className="close-btn"> 
-        <FontAwesomeIcon icon={faBars} style={{color: "#FFD43B",}} />
+        <FontAwesomeIcon icon={faXmark} beat style={{color: "#c10101",}} />
         </button>
       </div>
       <ul className="links">
@@ -54,18 +54,21 @@ const SidebarContainer = styled.div`
   }
   .Logo img {
     justify-self: center;
-    border-radius: 100%;
+       border-radius:50%;
+    background-position: center;
+    object-fit:contain;
     
   }
   .text{
     flex-shrink:0;
-     color: black;
      font-family: Cormorant Garamond;
-     font-size: 18px;
+        font-size: 1.2rem;
+    color: black;
+  font-weight: 500;
+  font-style: italic;
      margin-left: 6px;
      margin-top: -80px;
      color: black;
-     font-weight: 400;
      transform: translateX(137px);
      span{
         color:#ECB159;

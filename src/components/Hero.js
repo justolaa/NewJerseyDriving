@@ -28,7 +28,7 @@ const Hero = () => {
             <div className="image">
                  <img src={require('../Assets/road-track-6874080_1920.jpg')} width='100%' height='430px' alt="Track" />
                 <div className="text">
-                    <h1>We Cover ESSEX, UNION, MIDDLESEX <br /> AND SOMMERSET County Areas.</h1>
+                    <h1>We Cover ESSEX, UNION, MIDDLESEX <br /> AND SOMERSET County Areas.</h1>
                     <div className="tagline">
                            <h2>OUR INSTRUCTORS ARE ALL STATE CERTIFIED AND PUT THROUGH RIGOROUS TRAINING 
                     </h2>
