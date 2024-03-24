@@ -3,11 +3,36 @@ import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { courses } from '../data/constants'
+import useReveal from './useReveal'
 
 const Courses = () => {
+    const titleRef = React.useRef(null);
+
+  useReveal(titleRef, {
+    delay: 1,
+    duration: 1.5,
+    start: "top 80%",
+    ease: "expo",
+  });
+
+const subtitleRef = React.useRef(null);
+  useReveal(subtitleRef, {
+    delay: 2,
+    duration: 1.5,
+    start: "top 50%",
+    ease: "expo",
+  });
+
+  const sectionRef = React.useRef(null);
+  useReveal(sectionRef, {
+    delay: 2,
+    duration: 1.5,
+    start: "top 50%",
+    ease: "expo",
+  });
   return (
     <Wrapper>
-        <div className="container">
+        <div ref={titleRef} className="container gs_reveal_fromBottom">
             <h1>COURSES WE OFFER</h1>
             <div className="underline"></div>
             <h2>Our Driving School Provides the Best Courses For Our Learners</h2>

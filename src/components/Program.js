@@ -1,14 +1,32 @@
 import React from 'react'
 import styled from 'styled-components'
 import { program } from '../data/constants'
+import useReveal from './useReveal'
 
 const Program = () => {
+  const titleRef = React.useRef(null);
+
+  useReveal(titleRef, {
+    delay: 1,
+    duration: 1.5,
+    start: "top 80%",
+    ease: "expo",
+  });
+
+const subtitleRef = React.useRef(null);
+  useReveal(subtitleRef, {
+    delay: 2,
+    duration: 1.5,
+    start: "top 50%",
+    ease: "expo",
+  });
+  
   return (
     <Wrapper>
         <div className="container">
-      <h1>New Jersey's Program</h1>
+      <h1 ref={titleRef} className='gs_reveal_fromBottom'>New Jersey's Program</h1>
       <div className="underline"></div>
-           <div className="program"> 
+           <div ref={subtitleRef} className="program gs_reveal_fromBottom"> 
                        {program.map((programs)=>{
                             const {id, src, content } = programs;
                             return(

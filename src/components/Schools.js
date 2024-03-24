@@ -1,13 +1,30 @@
 import React from 'react'
+import useReveal from './useReveal';
 import styled from 'styled-components'
 
 const Schools = () => {
+    const titleRef = React.useRef(null);
+
+  useReveal(titleRef, {
+    delay: 1,
+    duration: 1.5,
+    start: "top 80%",
+    ease: "expo",
+  });
+
+const subtitleRef = React.useRef(null);
+  useReveal(subtitleRef, {
+    delay: 2,
+    duration: 1.5,
+    start: "top 50%",
+    ease: "expo",
+  });
   return (
     <Wrapper>
       
-      <h1>PROUDLY SERVING THE FOLLOWING HIGH SCHOOLS</h1>
+      <h1  ref={titleRef} className='gs_reveal_fromBottom' >PROUDLY SERVING THE FOLLOWING HIGH SCHOOLS</h1>
       <div className="underline"></div>
-      <div className="container">
+      <div ref={subtitleRef} className="container gs_reveal_fromBottom">
       <div className="grid-container">
             <div className="grid-item">
                 <div className='first'>MIDDLESSEX COUNTY</div>

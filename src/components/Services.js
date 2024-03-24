@@ -1,16 +1,50 @@
 import React from 'react'
+import useReveal from "./useReveal";
 import { service } from '../data/constants';
 import styled from 'styled-components'
 
 const Services = () => {
+  const titleRef = React.useRef(null);
+
+  useReveal(titleRef, {
+    delay: 1,
+    duration: 1.5,
+    start: "top 80%",
+    ease: "expo",
+  });
+
+const subtitleRef = React.useRef(null);
+  useReveal(subtitleRef, {
+    delay: 2,
+    duration: 1.5,
+    start: "top 50%",
+    ease: "expo",
+  });
+
+  const sectionRef = React.useRef(null);
+  useReveal(sectionRef, {
+    delay: 2,
+    duration: 1.5,
+    start: "top 50%",
+    ease: "expo",
+  });
+
+//   const imageRef = React.useRef(null);
+
+//   useReveal(imageRef, {
+//     delay: 1.5,
+//     duration: 1.5,
+//     start: "top 60%",
+//     ease: "expo",
+//   });
   return (
       <Wrapper>
-        <div className="container">
-    <div className="title">
-                       <h1>OUR SERVICES</h1>
+        <div  className="container">
+    <div className="title ">
+                       <h1 ref={titleRef} className='gs_reveal_fromBottom' >OUR SERVICES</h1>
                         <div className='underline'></div>
-                       <h2>Our Driving School Provides Unique Services For Our Students</h2>
-                    <div className="services"> 
+                       <h2 ref={subtitleRef} className="gs_reveal_fromBottom">Our Driving School Provides Unique Services For Our Students</h2>
+                    <div ref={sectionRef} className="services gs_reveal_fromBottom"> 
                        {service.map((services)=>{
                             const {id,service, name } = services;
                             return(
