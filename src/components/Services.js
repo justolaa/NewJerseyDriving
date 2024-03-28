@@ -8,23 +8,23 @@ const Services = () => {
 
   useReveal(titleRef, {
     delay: 1,
-    duration: 1.5,
+    duration: 1,
     start: "top 80%",
     ease: "expo",
   });
 
 const subtitleRef = React.useRef(null);
   useReveal(subtitleRef, {
-    delay: 2,
-    duration: 1.5,
+    delay: 1,
+    duration: 1,
     start: "top 50%",
     ease: "expo",
   });
 
   const sectionRef = React.useRef(null);
   useReveal(sectionRef, {
-    delay: 2,
-    duration: 1.5,
+    delay: 1,
+    duration: 1,
     start: "top 50%",
     ease: "expo",
   });
@@ -42,9 +42,9 @@ const subtitleRef = React.useRef(null);
         <div  className="container">
     <div className="title ">
                        <h1 ref={titleRef} className='gs_reveal_fromBottom' >OUR SERVICES</h1>
-                        <div className='underline'></div>
+                        <div ref={sectionRef} className='underline  gs_reveal_fromBottom'></div>
                        <h2 ref={subtitleRef} className="gs_reveal_fromBottom">Our Driving School Provides Unique Services For Our Students</h2>
-                    <div ref={sectionRef} className="services gs_reveal_fromBottom"> 
+                    <div  className="services"> 
                        {service.map((services)=>{
                             const {id,service, name } = services;
                             return(

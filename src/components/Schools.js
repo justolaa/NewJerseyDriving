@@ -7,15 +7,15 @@ const Schools = () => {
 
   useReveal(titleRef, {
     delay: 1,
-    duration: 1.5,
+    duration: 1,
     start: "top 80%",
     ease: "expo",
   });
 
 const subtitleRef = React.useRef(null);
   useReveal(subtitleRef, {
-    delay: 2,
-    duration: 1.5,
+    delay: 1,
+    duration: 1,
     start: "top 50%",
     ease: "expo",
   });
@@ -23,8 +23,8 @@ const subtitleRef = React.useRef(null);
     <Wrapper>
       
       <h1  ref={titleRef} className='gs_reveal_fromBottom' >PROUDLY SERVING THE FOLLOWING HIGH SCHOOLS</h1>
-      <div className="underline"></div>
-      <div ref={subtitleRef} className="container gs_reveal_fromBottom">
+      <div ref={subtitleRef} className="underline gs_reveal_fromBottom"></div>
+      <div className="container">
       <div className="grid-container">
             <div className="grid-item">
                 <div className='first'>MIDDLESSEX COUNTY</div>

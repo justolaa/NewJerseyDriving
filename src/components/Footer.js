@@ -1,30 +1,13 @@
 import React from 'react'
-import useReveal from './useReveal'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faPhone,faLocationDot} from '@fortawesome/free-solid-svg-icons'
 
 const Footer = () => {
-    const titleRef = React.useRef(null);
-
-  useReveal(titleRef, {
-    delay: 1,
-    duration: 1.5,
-    start: "top 80%",
-    ease: "expo",
-  });
-    const subtitleRef = React.useRef(null);
-
-  useReveal(subtitleRef, {
-    delay: 1,
-    duration: 1.5,
-    start: "top 80%",
-    ease: "expo",
-  });
   return (
     <Wrapper>
       <div className="container"> 
-      <div ref={titleRef} className="grid-container gs_reveal_fromBottom"> 
+      <div className="grid-container"> 
             <div className="grid-item">
                 <h1>ABOUT</h1>
                    <p>Welcome to New Jersey Driving School, where we empower individuals of all ages to become safe and responsible drivers.
@@ -77,7 +60,7 @@ We offer a diverse range of programs designed to meet your unique needs and goal
       </div>
       </div>
       <div className="container2">
-      <div  ref={subtitleRef} className="grid-container2 gs_reveal_fromBottom">
+      <div className="grid-container2">
             <div className="grid-item2">
                 <h1>ABOUT</h1>
                    <p>Welcome to New Jersey Driving School, where we empower individuals of all ages to become safe and responsible drivers.

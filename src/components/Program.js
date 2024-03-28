@@ -8,15 +8,15 @@ const Program = () => {
 
   useReveal(titleRef, {
     delay: 1,
-    duration: 1.5,
+    duration: 1,
     start: "top 80%",
     ease: "expo",
   });
 
 const subtitleRef = React.useRef(null);
   useReveal(subtitleRef, {
-    delay: 2,
-    duration: 1.5,
+    delay: 1,
+    duration: 1,
     start: "top 50%",
     ease: "expo",
   });
@@ -25,8 +25,8 @@ const subtitleRef = React.useRef(null);
     <Wrapper>
         <div className="container">
       <h1 ref={titleRef} className='gs_reveal_fromBottom'>New Jersey's Program</h1>
-      <div className="underline"></div>
-           <div ref={subtitleRef} className="program gs_reveal_fromBottom"> 
+      <div ref={subtitleRef} className="underline gs_reveal_fromBottom"></div>
+           <div className="program "> 
                        {program.map((programs)=>{
                             const {id, src, content } = programs;
                             return(
